@@ -1,0 +1,125 @@
+# Copyright (C) 2015 David Shanske
+# This file is distributed under the same license as the Semantic Notifications package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Semantic Notifications 0.0.1\n"
+"Report-Msgid-Bugs-To: "
+"http://wordpress.org/support/plugin/semantic-notifications\n"
+"POT-Creation-Date: 2015-10-18 13:14:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: semantic-notifications.php:33
+#. translators: 1: website name, 2: website IP, 3: website hostname
+msgid "Website: %1$s (IP: %2$s, %3$s)"
+msgstr ""
+
+#: semantic-notifications.php:34 semantic-notifications.php:40
+msgid "URL: %s"
+msgstr ""
+
+#: semantic-notifications.php:35 semantic-notifications.php:74
+msgid "Excerpt: %s"
+msgstr ""
+
+#: semantic-notifications.php:38
+#. translators: 1: comment author, 2: author IP, 3: author domain
+msgid "Author: %1$s (IP: %2$s, %3$s)"
+msgstr ""
+
+#: semantic-notifications.php:39
+msgid "E-mail: %s"
+msgstr ""
+
+#: semantic-notifications.php:41
+msgid "Comment: %s"
+msgstr ""
+
+#: semantic-notifications.php:69
+#. translators: 1: website name, 2: website IP, 3: website hostname
+msgid "Semantic Type: %s"
+msgstr ""
+
+#: semantic-notifications.php:70
+msgid "Author: %1s(%2s) "
+msgstr ""
+
+#: semantic-notifications.php:72
+msgid "Website: %s "
+msgstr ""
+
+#: semantic-notifications.php:172
+msgid "New response to your post \"%s\""
+msgstr ""
+
+#: semantic-notifications.php:173
+msgid "[%1$s] Response: \"%2$s\""
+msgstr ""
+
+#: semantic-notifications.php:176
+#. translators: 1: blog name, 2: post title
+msgid "You can see all responses to this post here: "
+msgstr ""
+
+#: semantic-notifications.php:178
+msgid "Permalink: %s"
+msgstr ""
+
+#: semantic-notifications.php:182 semantic-notifications.php:282
+msgid "Trash it: %s"
+msgstr ""
+
+#: semantic-notifications.php:184 semantic-notifications.php:283
+msgid "Delete it: %s"
+msgstr ""
+
+#: semantic-notifications.php:186 semantic-notifications.php:284
+msgid "Spam it: %s"
+msgstr ""
+
+#: semantic-notifications.php:277
+msgid "A new response to the post \"%s\" is waiting for your approval"
+msgstr ""
+
+#: semantic-notifications.php:280
+msgid "Approve it: %s"
+msgstr ""
+
+#: semantic-notifications.php:286
+msgid ""
+"Currently %s response is waiting for approval. Please visit the moderation "
+"panel:"
+msgid_plural ""
+"Currently %s responses are waiting for approval. Please visit the "
+"moderation panel:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: semantic-notifications.php:290
+msgid "[%1$s] Please moderate: \"%2$s\""
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Semantic Notifications"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/dshanske/semantic-notifications"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Notifications Improvements for Semantic Linkbacks"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "David Shanske"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://david.shanske.com"
+msgstr ""
