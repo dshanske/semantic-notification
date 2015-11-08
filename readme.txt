@@ -11,17 +11,24 @@ Notification Enhancements for Semantic Linkbacks
 
 == Description == 
 
-Uses the pluggable functions of WordPress to replace the Comment Notification functions with ones
-easier to adjust. The implementation is a patch currently under consideration for WordPress Core 
-under Ticket #33735(https://core.trac.wordpress.org/ticket/33735).
-
-It then adds to the filter to make the display aware contextual.
+Makes improvements to the comment presentation of comments/linkbacks enhanced by Semantic Linkbacks
+and supports Push Notifications with the Pushover for WordPress plugin.
 
 == Screenshots ==
 
 
-== Frequently Asked Questions ==
+== Other Notes == 
+
+Uses the pluggable functions of WordPress to replace the Comment Notification functions with ones
+easier to adjust. The implementation is a patch currently under consideration for WordPress Core
+under Ticket #33735(https://core.trac.wordpress.org/ticket/33735).
+
+It then adds to the filter to make the display aware contextual.
+
 
 == Changelog ==
+	= Version 1.0.0 = 
+		* Add push notifications support
+		* Separate out email and push functions
 	= Version 0.01 = 
 		* Initial Release
