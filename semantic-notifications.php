@@ -1,25 +1,40 @@
 <?php
 /**
- * Semantic Linkbacks Notifications
+ * Semantic Linkbacks Notification
  *
  * @link    http://indiewebcamp.com/
- * @package Semantic Linkbacks Notifications
+ * @package Semantic Linkbacks Notification
  * Plugin Name: Semantic Notifications
  * Plugin URI: https://github.com/dshanske/semantic-notifications
  * Description: Notifications Improvements for Semantic Linkbacks
  * Version: 1.0.0
  * Author: David Shanske
  * Author URI: https://david.shanske.com
- * Text Domain: Semantic Notifications
+ * Text Domain: semantic_notification
  */
 
-load_plugin_textdomain( 'Semantic Notifications', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+function semantic_notification_activation() {
+        if ( !class_exists('SemanticLinkbacksPlugin') ) {
+                die( 'This plugin requires the Semantic Linkbacks Plugin' )
+;
+        }
+}
+register_activation_hook( __FILE__, 'semantic_notification_activation' );
+
+
+load_plugin_textdomain( 'semantic_notifications', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
+
+
 
 // Add Email Notifications
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-sem-emails.php';
 
 // Add Push Notifications
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sem-push.php';
+
+// Add Comment Whitelist
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-sem-moderation.php';
 
 
 /**

@@ -30,5 +30,6 @@ It then adds to the filter to make the display aware contextual.
 	= Version 1.0.0 = 
 		* Add push notifications support
 		* Separate out email and push functions
+		* Add linkback moderation whitelist previously in Extras
 	= Version 0.01 = 
 		* Initial Release
