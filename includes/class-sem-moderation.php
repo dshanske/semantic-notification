@@ -1,7 +1,7 @@
 <?php
 
 	add_filter( 'admin_init', array( 'sem_moderation', 'admin_init' ), 10, 4 );
-	add_filter( 'semantic_linkbacks_commentdata', array( 'sem_moderation', 'moderate_linkbacks' ) );
+	add_filter( 'semantic_linkbacks_commentdata', array( 'sem_moderation', 'moderate_linkbacks' ), 10, 3 );
 
 class sem_moderation {
 
@@ -40,7 +40,7 @@ class sem_moderation {
 	 *
 	 * @return boolean
 	 */
-	function whitelist_approved($url) {
+	public static function whitelist_approved($url) {
 		if ( empty( $url ) ) { return false; }
 		$options = get_option( 'iwcfun_options' );
 		$mod_keys = trim( $options['whitelist_keys'] );
@@ -62,7 +62,7 @@ class sem_moderation {
 	}
 
 	function moderate_linkbacks($commentdata, $target, $html) {
-		if ( whitelist_approved( $commentdata['_canonical'] ) ) {
+		if ( self::whitelist_approved( $commentdata['_canonical'] ) ) {
 			$commentdata['comment_approved'] = 1;
 		}
 		 return $commentdata;
